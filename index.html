@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" lang="PT-BR">
+    <title>SUA FASE DA VIDA!</title>
+</head>
+<style>
+    body{
+        background-color: bisque;
+        text-align: center;
+    }
+    .titulo{
+        margin-top:100px;
+    }
+</style>
+<script>
+    function fase(){
+        let idade = document.getElementById("idade");
+        if( idade.value <=12){
+            window.alert("você é criança ");
+        }
+        if( idade.value >=13 && idade.value <=20){
+            window.alert("você é adolescente");
+        }
+        if( idade.value >=21 && idade.value <=65){
+            window.alert("você é adulto");
+        }
+        if( idade.value >=65){
+            window.alert("você é idoso");
+        }
+    }
+</script>
+<body>
+    <div class="titulo">
+        <h1>DESCUBRA SUA FASE DA VIDA!</h1>
+    </div>
+    <div class="info">
+        
+            <label>SUA IDADE?</label>
+            <input class="input" type="text" value="Exemplo:35" id="idade">
+            <button onclick="fase()">VEJA!</button>
+        
+    </div>
+</body>
+</html>
