@@ -16,16 +16,16 @@
     function fase(){
         let idade = document.getElementById("idade");
         if( idade.value <=12){
-            window.alert("você é criança ");
+            text.innerHTML="você é criança ";
         }
         if( idade.value >=13 && idade.value <=20){
-            window.alert("você é adolescente");
+            text.innerHTML="você é adolescente";
         }
         if( idade.value >=21 && idade.value <=65){
-            window.alert("você é adulto");
+            text.innerHTML="você é adulto";
         }
         if( idade.value >=65){
-            window.alert("você é idoso");
+        text.innerHTML= "você é idoso";
         }
     }
 </script>
@@ -38,6 +38,9 @@
             <label>SUA IDADE?</label>
             <input class="input" type="text" value="Exemplo:35" id="idade">
             <button onclick="fase()">VEJA!</button>
+            <div class="result">
+                <p id="text"></p>
+            </div>
         
     </div>
 </body>
