@@ -14,18 +14,19 @@
 </style>
 <script>
     function fase(){
+        let nome = document.getElementById("nome");
         let idade = document.getElementById("idade");
         if( idade.value <=12){
-            text.innerHTML="você é criança ";
+            text.innerHTML=nome.value +" você é criança ";
         }
         if( idade.value >=13 && idade.value <=20){
-            text.innerHTML="você é adolescente";
+            text.innerHTML=nome.value +" você é adolescente";
         }
         if( idade.value >=21 && idade.value <=65){
-            text.innerHTML="você é adulto";
+            text.innerHTML= nome.value + " você é adulto";
         }
         if( idade.value >=65){
-        text.innerHTML= "você é idoso";
+        text.innerHTML= nome.value + " você é idoso";
         }
     }
 </script>
@@ -34,7 +35,8 @@
         <h1>DESCUBRA SUA FASE DA VIDA!</h1>
     </div>
     <div class="info">
-        
+        <label>SUA NOME?</label>
+        <input class="input" type="text" id="nome">
             <label>SUA IDADE?</label>
             <input class="input" type="text" value="Exemplo:35" id="idade">
             <button onclick="fase()">VEJA!</button>
